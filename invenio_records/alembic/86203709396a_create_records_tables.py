@@ -29,7 +29,7 @@ import sqlalchemy_utils
 from alembic import op
 
 # revision identifiers, used by Alembic.
-revision = '862037093962'
+revision = '86203709396a'
 down_revision = '1095cdf9f350'
 branch_labels = ()
 depends_on = None
