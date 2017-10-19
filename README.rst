@@ -21,9 +21,9 @@
     waive the privileges and immunities granted to it by virtue of its status
     as an Intergovernmental Organization or submit itself to any jurisdiction.
 
-=================
+================
  Invenio-Records
-=================
+================
 
 .. image:: https://img.shields.io/travis/inveniosoftware/invenio-records.svg
         :target: https://travis-ci.org/inveniosoftware/invenio-records
@@ -42,6 +42,21 @@
 
 
 Invenio-Records is a metadata storage module.
+In a few words, a `record`_ is basically a structured collection of fields and
+values (metadata) which provides information about other data.
 
-* Free software: GPLv2 license
-* Documentation: https://invenio-records.readthedocs.io/
+.. _record: https://en.wikipedia.org/wiki/Record_(computer_science)
+
+A record (and each revision) is identified by a unique `UUID`_, as most of the
+others entities in Invenio.
+
+.. _UUID: https://en.wikipedia.org/wiki/Universally_unique_identifier
+
+Features:
+
+ * Records creation, update and deletion, with optional schema validation.
+ * Version control of record metadata, with revision recovering.
+ * CLI and administration interface for CRUD operations on records.
+ * Minting PIDs through CLI if `InvenioPIDStore <https://python-jsonschema.readthedocs.io/>`_ is installed.
+
+Further documentation available Documentation: https://invenio-records.readthedocs.io/
